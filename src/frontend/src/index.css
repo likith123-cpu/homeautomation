@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 1rem;
+    /* Dark navy theme - always dark */
+    --background: 0.13 0.028 248;
+    --foreground: 0.95 0.018 248;
+    --card: 0.19 0.035 248;
+    --card-foreground: 0.95 0.018 248;
+    --popover: 0.22 0.04 248;
+    --popover-foreground: 0.95 0.018 248;
+    --primary: 0.61 0.18 252;
+    --primary-foreground: 0.99 0 0;
+    --secondary: 0.22 0.04 248;
+    --secondary-foreground: 0.95 0.018 248;
+    --muted: 0.22 0.04 248;
+    --muted-foreground: 0.73 0.025 248;
+    --accent: 0.26 0.045 248;
+    --accent-foreground: 0.95 0.018 248;
+    --destructive: 0.63 0.22 25;
+    --destructive-foreground: 0.99 0 0;
+    --border: 0.32 0.04 248 / 40%;
+    --input: 0.26 0.04 248;
+    --ring: 0.61 0.18 252;
+    --chart-1: 0.61 0.18 252;
+    --chart-2: 0.75 0.15 70;
+    --chart-3: 0.72 0.2 150;
+    --chart-4: 0.75 0.14 222;
+    --chart-5: 0.63 0.22 25;
+    --sidebar: 0.16 0.032 248;
+    --sidebar-foreground: 0.95 0.018 248;
+    --sidebar-primary: 0.61 0.18 252;
+    --sidebar-primary-foreground: 0.99 0 0;
+    --sidebar-accent: 0.22 0.04 248;
+    --sidebar-accent-foreground: 0.95 0.018 248;
+    --sidebar-border: 0.32 0.04 248 / 40%;
+    --sidebar-ring: 0.61 0.18 252;
+
+    /* Custom tokens */
+    --blue: 0.61 0.18 252;
+    --orange: 0.75 0.15 70;
+    --green: 0.72 0.2 150;
+    --teal: 0.75 0.14 222;
+    --card-elevated: 0.23 0.042 248;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: oklch(0.32 0.04 248 / 60%);
+    border-radius: 3px;
+  }
+}
